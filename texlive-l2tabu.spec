@@ -1,3 +1,9 @@
+# revision 24038
+# category Package
+# catalog-ctan /info/l2tabu/german
+# catalog-date 2011-09-21 00:38:26 +0200
+# catalog-license gpl
+# catalog-version 2.3
 Name:		texlive-l2tabu
 Version:	2.3
 Release:	1
@@ -25,6 +31,7 @@ English, French, Italian and Spanish).
 %doc %{_texmfdistdir}/doc/latex/l2tabu/README
 %doc %{_texmfdistdir}/doc/latex/l2tabu/l2tabu.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu/l2tabu.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -35,3 +42,5 @@ English, French, Italian and Spanish).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
