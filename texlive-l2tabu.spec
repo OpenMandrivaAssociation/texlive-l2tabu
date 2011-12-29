@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The "sins" of LaTeX users, and how to correct them. The
@@ -31,7 +29,6 @@ English, French, Italian and Spanish).
 %doc %{_texmfdistdir}/doc/latex/l2tabu/README
 %doc %{_texmfdistdir}/doc/latex/l2tabu/l2tabu.pdf
 %doc %{_texmfdistdir}/doc/latex/l2tabu/l2tabu.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -42,5 +39,3 @@ English, French, Italian and Spanish).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
