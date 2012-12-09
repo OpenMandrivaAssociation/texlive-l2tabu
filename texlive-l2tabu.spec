@@ -39,3 +39,17 @@ English, French, Italian and Spanish).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.3-2
++ Revision: 753062
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.3-1
++ Revision: 718790
+- texlive-l2tabu
+- texlive-l2tabu
+- texlive-l2tabu
+- texlive-l2tabu
+
