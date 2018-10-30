@@ -6,7 +6,7 @@
 # catalog-version 2.3
 Name:		texlive-l2tabu
 Version:	2.4
-Release:	2
+Release:	3
 Summary:	Obsolete packages and commands
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/l2tabu/german
