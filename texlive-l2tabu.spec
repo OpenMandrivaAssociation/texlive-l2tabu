@@ -3,7 +3,7 @@ Version:	63708
 Release:	2
 Summary:	Obsolete packages and commands
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/l2tabu/german
+URL:		https://www.ctan.org/tex-archive/info/l2tabu/german
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l2tabu.doc.r%{version}.tar.xz
